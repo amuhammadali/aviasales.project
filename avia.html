@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="avia.js" defer></script>
+  <link rel="stylesheet" href="avia.css">
+  <title>SkyJourney - Бронирование авиабилетов</title>
+  
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">SkyJourney</div>
+      <div class="nav-links">
+        <a href="#">Главная</a>
+        <a href="#">Рейсы</a>
+        <a href="#">Отели</a>
+        <a href="#">Аренда авто</a>
+        <a href="#">Спецпредложения</a>
+      </div>
+    </nav>
+    
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Найдите идеальный рейс</h1>
+        <div class="search-form">
+          <form>
+            <div class="form-group">
+              <label for="from">Откуда</label>
+              <input type="text" id="from" name="from" placeholder="Город вылета">
+            </div>
+            <div class="form-group">
+              <label for="to">Куда</label>
+              <input type="text" id="to" name="to" placeholder="Город прилета">
+            </div>
+            <div class="form-group">
+              <label for="depart">Дата вылета</label>
+              <input type="date" id="depart-date" name="depart">
+            </div>
+            <div class="form-group">
+              <label for="return">Дата возвращения</label>
+              <input type="date" id="return-date" name="return">
+            </div>
+            <div class="form-group">
+              <label for="passengers">Пассажиры</label>
+              <input type="number" id="passengers" name="passengers">
+            </div>
+            <button id="get-flights-btn">Найти билеты</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2>Почему выбирают SkyJourney?</h2>
+        <div class="feature-grid">
+          <div class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" alt="Лучшие цены">
+            <h3>Лучшие цены</h3>
+            <p>Мы гарантируем самые выгодные предложения на авиабилеты.</p>
+          </div>
+          <div class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/512/3176/3176298.png" alt="Поддержка 24/7">
+            <h3>Поддержка 24/7</h3>
+            <p>Наша команда поддержки всегда готова помочь вам.</p>
+          </div>
+          <div class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/512/2645/2645890.png" alt="Простое бронирование">
+            <h3>Простое бронирование</h3>
+            <p>Забронируйте свой рейс всего за несколько кликов.</p>
+          </div>
+          <div class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/512/3500/3500833.png" alt="Гибкие изменения">
+            <h3>Гибкие изменения</h3>
+            <p>Легко меняйте или отменяйте бронирование.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 SkyJourney. Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+  </header>
